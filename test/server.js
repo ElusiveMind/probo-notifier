@@ -22,7 +22,7 @@ describe('Server', function() {
       stream = through2.obj();
       var options = {
         consumer: new eventbus.plugins.Memory.Consumer({stream}),
-        log: bunyan.createLogger({name: 'reaper-tests'}),
+        log: bunyan.createLogger({name: 'notifier-tests'}),
         plugins: {
           test: TestPlugin,
         },
